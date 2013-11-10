@@ -341,6 +341,9 @@ public class TestLevel extends BasicGameState {
 		Range r = new Range(pl);
 		Range r1 = new Range(enemy);
 		if(isFighting == false){
+			//Notice this line
+			//It updates all it components like moving
+			//You can see initialized components in the init method
 			pl.update(gc, sb, delta);
 		}
 		else{

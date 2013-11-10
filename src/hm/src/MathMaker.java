@@ -17,7 +17,7 @@ import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-
+//The class that makes horrible math
 public class MathMaker {
 	static double answer = 0;
 	static double userinput = 0;
@@ -27,6 +27,7 @@ public class MathMaker {
 	static int preferedLevel = 1;
 	private int mathDamage = 1;
 	
+	//returns true if you answered correct
 	public boolean make(){
 		Math m = new Math();
 		Level1 lv1 = new Level1();
@@ -192,6 +193,8 @@ public class MathMaker {
 		}
 		return false;
 	}
+	
+	@Deprecated
 	public int getCorrectAnswers(){
 		return correctAnswers;
 	}

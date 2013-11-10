@@ -6,14 +6,16 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-
+//this is the class who calculates which numbers that can be divided by eachothers
 public class Math {
 	ObjectOutputStream os;
 	ArrayList<Integer> dividingNumbers;
 	ArrayList<Integer> dividedByNumbers;
+	//this writes the data to files stored in: HMData/tables/thelevel/
 	public void writeDivisionTable(int tableSystem){
 		dividingNumbers = new ArrayList<Integer>();
 		dividedByNumbers = new ArrayList<Integer>();
+		//every number in the multiplication table up to  minimum 50
 		if(tableSystem==2){
 			dividingNumbers.add(2);
 			dividingNumbers.add(4);
@@ -196,6 +198,7 @@ public class Math {
 			dividedByNumbers.add(5);
 			dividedByNumbers.add(3);
 		}
+		//finally writes the files into a fitting level
 		if(tableSystem <= 9){
 			try {
 				File hmdir = new File("HMData/level1/tables");

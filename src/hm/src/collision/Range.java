@@ -10,6 +10,17 @@ public class Range{
 	public Range(Entity object1){
 		this.object1 = object1;
 	}
+	/*
+	 *  +
+	 *   --------|
+	 *   |       |
+	 *   |       |
+	 *   |       |
+	 *   |--------
+	 *            -
+	 */
+	
+	//gets the position of one of the pools
 	public Vector2f getRange(String pool){
 		if(pool.equals("-")){
 			return new Vector2f(object1.getPosition());
